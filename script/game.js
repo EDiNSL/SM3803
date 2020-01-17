@@ -11,7 +11,7 @@ $.ajax({
     }
   });
 
-start();
+
 function start() {
 
 var randColour;
