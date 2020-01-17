@@ -2,14 +2,14 @@ var data = new RiMarkov(4, 1, 1);
 
 var te = '';
 
-// $.ajax({
-//     url:'statements.txt',
-//     success: function (data){
-//       te = JSON.stringify(data);
-//       console.log(te);
-//       start();
-//     }
-//   });
+$.ajax({
+    url:'statements.txt',
+    success: function (data){
+      te = JSON.stringify(data);
+      console.log(te);
+      start();
+    }
+  });
 
 start();
 function start() {
@@ -53,7 +53,7 @@ function interpreter() {
   document.getElementById("randColour").style.display = "none";
 }
 
-function guess() { 
+function guess() {
   if (true) {
     correct();
   } else {
