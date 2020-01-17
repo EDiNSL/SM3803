@@ -3,7 +3,7 @@ var data = new RiMarkov(4, 1, 1);
 var te = '';
 
 $.ajax({
-    url:'statements.txt',
+    url:'script/statements.txt',
     success: function (data){
       te = JSON.stringify(data);
       console.log(te);
